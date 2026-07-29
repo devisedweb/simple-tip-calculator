@@ -3,7 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Simple Tip Calculator</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <div>
+        <h2>Bill Amount</h2>
+        <input type="text" placeholder="$0.00" id="bill-input" />
+
+        <h2>Tip Amount</h2>
+        <fieldset>
+          <label for="">
+            <input type="radio" name="tip" value="5" id="tip-5" />
+            5%
+          </label>
+
+          <label for="">
+            <input type="radio" name="tip" value="10" id="tip-10" />
+            10%
+          </label>
+
+          <label for="">
+            <input type="radio" name="tip" value="15" id="tip-15" />
+            15%
+          </label>
+        </fieldset>
+      </div>
+
+      <div>
+        <p id="total"></p>
+      </div>
+    </main>
+  </body>
 </html>
